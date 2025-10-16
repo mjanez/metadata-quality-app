@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom colors for MQA using Tailwind v4 syntax */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  
+  --color-success: #10b981;
+  --color-success-light: #d1fae5;
+  --color-success-dark: #047857;
+  
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark: #d97706;
+  
+  --color-error: #ef4444;
+  --color-error-light: #fee2e2;
+  --color-error-dark: #dc2626;
+  
+  --color-info: #3b82f6;
+  --color-info-light: #dbeafe;
+  --color-info-dark: #1d4ed8;
+}
+
+/* Global styles */
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: rgb(249 250 251);
+  color: rgb(17 24 39);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+:where(.dark) body {
+  background-color: rgb(17 24 39);
+  color: rgb(243 244 246);
+}
+
+/* Card component */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border: 1px solid rgb(229 231 235);
+}
+
+:where(.dark) .card {
+  background-color: rgb(31 41 55);
+  border-color: rgb(55 65 81);
+}
+
+/* Button primary */
+.btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary-600);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-700);
+}
+
+.btn-primary:disabled {
+  background-color: rgb(156 163 175);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: rgb(229 231 235);
+  border-radius: 0.25rem;
+}
+
+:where(.dark) .scrollbar-thin::-webkit-scrollbar-track {
+  background-color: rgb(31 41 55);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(156 163 175);
+  border-radius: 0.25rem;
+}
+
+:where(.dark) .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107 114 128);
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

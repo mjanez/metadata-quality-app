@@ -1,0 +1,48 @@
+{
+  "name": "metadata-quality-app",
+  "version": "1.0.0",
+  "description": "Next.js + Tailwind CSS - Metadata Quality Assessment Tool",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@rdfjs/data-model": "^2.1.1",
+    "@rdfjs/dataset": "^2.0.2",
+    "@rdfjs/environment": "^1.0.0",
+    "chart.js": "^4.4.0",
+    "class-variance-authority": "^0.7.0",
+    "clownface": "^2.0.3",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.0.0",
+    "lucide-react": "^0.453.0",
+    "n3": "^1.17.0",
+    "next": "^15.0.0",
+    "next-intl": "^3.0.0",
+    "rdf-ext": "^2.6.0",
+    "rdfxml-streaming-parser": "^2.4.0",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^19.0.0",
+    "shacl-engine": "^1.0.2",
+    "sparqljs": "^3.7.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/n3": "^1.26.0",
+    "@types/node": "^20.0.0",
+    "@types/rdfjs__data-model": "^2.0.9",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/sparqljs": "^3.1.12",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.3.0"
+  }
+}

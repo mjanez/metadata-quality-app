@@ -1,0 +1,145 @@
+{
+  "app": {
+    "title": "Metadata Quality Assessment (MQA)",
+    "subtitle": "RDF Validation Tool - DCAT Profiles",
+    "description": "Validate and assess the quality of RDF metadata against DCAT profiles"
+  },
+  "validation": {
+    "title": "Validate Metadata",
+    "profile": "Validation Profile",
+    "inputType": {
+      "text": "RDF Text",
+      "url": "URL"
+    },
+    "rdfContent": "RDF Content",
+    "rdfPlaceholder": "Paste your RDF content here (Turtle or RDF/XML)...",
+    "rdfUrl": "RDF URL",
+    "urlPlaceholder": "https://example.com/dataset.ttl",
+    "formatsSupported": "Supported formats: Turtle & RDF/XML",
+    "validate": "Validate",
+    "validating": "Validating...",
+    "error": "Validation Error",
+    "clear": "Clear",
+    "pleaseWait": "Please wait while we process your request...",
+    "downloadResults": "Download Results",
+    "downloadTurtle": "Download SHACL report in Turtle format",
+    "downloadCSV": "Download SHACL report in CSV format",
+    "downloadChartPNG": "Download chart as PNG",
+    "downloadMetricsCSV": "Download metrics as CSV"
+  },
+  "profiles": {
+    "dcat_ap": "DCAT-AP v2.1.1",
+    "dcat_ap_es": "DCAT-AP-ES v1.0.0",
+    "nti_risp": "NTI-RISP v2013"
+  },
+  "results": {
+    "title": "Validation Results",
+    "noResults": "No results yet. Submit the form to validate your metadata.",
+    "summary": "Summary",
+    "qualityScore": "Quality Score",
+    "shacl": "SHACL Violations",
+    "metrics": "Quality Metrics",
+    "chart": "FAIR+C Chart"
+  },
+  "quality": {
+    "findability": "Findability",
+    "accessibility": "Accessibility",
+    "interoperability": "Interoperability",
+    "reusability": "Reusability",
+    "contextuality": "Contextuality",
+    "overall": "Overall Score"
+  },
+  "shacl": {
+    "title": "SHACL Validation",
+    "conforms": "Conforms",
+    "nonConforms": "Non-Conforms",
+    "severity": "Severity",
+    "focusNode": "Focus Node",
+    "path": "Property Path",
+    "message": "Message",
+    "value": "Value",
+    "noViolations": "No SHACL violations found",
+    "filterBySeverity": "Filter by severity",
+    "all": "All",
+    "violation": "Violation",
+    "warning": "Warning",
+    "info": "Info",
+    "grouped": "Grouped into",
+    "types": "types",
+    "total": "total",
+    "occurrences": "occurrences",
+    "examples": "Examples",
+    "of": "of",
+    "andMore": "and {count} more...",
+    "noResults": "No {severity} results found"
+  },
+  "metrics": {
+    "datasets": "Datasets Found",
+    "distributions": "Distributions",
+    "dataServices": "Data Services",
+    "keywords": "Keywords",
+    "licenses": "Licenses",
+    "accessRights": "Access Rights",
+    "contactPoints": "Contact Points",
+    "spatial": "Spatial Coverage",
+    "temporal": "Temporal Coverage"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle Theme"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "toggle": "Change Language"
+  },
+  "errors": {
+    "parseError": "Error parsing RDF content",
+    "validationError": "Error during validation",
+    "networkError": "Network error. Please check the URL and try again.",
+    "genericError": "An unexpected error occurred"
+  },
+  "loading": {
+    "parsing": "Parsing RDF...",
+    "validating": "Running SHACL validation...",
+    "calculating": "Calculating quality metrics...",
+    "downloading": "Downloading from URL..."
+  },
+  "metricDetails": {
+    "shaclValidationPassed": "SHACL validation passed",
+    "noDatasetsFound": "No datasets found",
+    "noDistributionsFound": "No distributions found",
+    "noDistributionsWithAccessURL": "No distributions with valid HTTP accessURL found",
+    "noDistributionsWithDownloadURL": "No distributions with downloadURL found",
+    "datasetsHaveKeywords": "{count}/{total} datasets have keywords",
+    "datasetsHaveThemes": "{count}/{total} datasets have themes",
+    "datasetsHaveSpatialCoverage": "{count}/{total} datasets have spatial coverage",
+    "datasetsHaveTemporalCoverage": "{count}/{total} datasets have temporal coverage",
+    "distributionsHaveAccessURL": "{count}/{total} distributions have accessible accessURL (HTTP 2xx)",
+    "distributionsHaveAccessURLNotChecked": "{count}/{total} distributions have accessURL (not checked for accessibility)",
+    "distributionsHaveDownloadURL": "{count}/{total} distributions have downloadURL",
+    "downloadURLsAccessible": "{count}/{total} downloadURLs are accessible (HTTP 2xx)",
+    "distributionsHaveFormat": "{count}/{total} distributions have format",
+    "distributionsHaveMediaType": "{count}/{total} distributions have mediaType",
+    "distributionsUseKnownFormat": "{count}/{total} distributions use known format vocabulary",
+    "distributionsUseNonProprietary": "{count}/{total} distributions use non-proprietary formats",
+    "distributionsAreMachineReadable": "{count}/{total} distributions are machine-readable",
+    "distributionsHaveLicense": "{count}/{total} distributions have license",
+    "distributionsUseKnownLicense": "{count}/{total} distributions use known license vocabulary",
+    "datasetsHaveAccessRights": "{count}/{total} datasets have accessRights",
+    "datasetsUseKnownAccessRights": "{count}/{total} datasets use known accessRights vocabulary",
+    "datasetsHaveContactPoint": "{count}/{total} datasets have contactPoint",
+    "datasetsHavePublisher": "{count}/{total} datasets have publisher",
+    "distributionsHaveByteSize": "{count}/{total} distributions have byteSize",
+    "entitiesHaveIssuedDate": "{count}/{total} entities have issued date",
+    "entitiesHaveModifiedDate": "{count}/{total} entities have modified date",
+    "distributionsHaveRights": "{count}/{total} distributions have rights",
+    "metricNotImplemented": "Metric {id} not implemented"
+  },
+  "ui": {
+    "profileIconAlt": "Profile icon",
+    "viewProfileDocumentation": "View profile documentation",
+    "maxScore": "Max score: {score}"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "app": {
+    "title": "Evaluación de Calidad de Metadatos (MQA)",
+    "subtitle": "Herramienta de validación RDF - Perfiles DCAT",
+    "description": "Valida y evalúa la calidad de metadatos RDF contra perfiles DCAT"
+  },
+  "validation": {
+    "title": "Validar metadatos",
+    "profile": "Perfil de validación",
+    "inputType": {
+      "text": "Texto RDF",
+      "url": "URL"
+    },
+    "rdfContent": "Contenido RDF",
+    "rdfPlaceholder": "Pega tu contenido RDF aquí (Turtle o RDF/XML)...",
+    "rdfUrl": "URL RDF",
+    "urlPlaceholder": "https://ejemplo.com/dataset.ttl",
+    "formatsSupported": "Formatos soportados: Turtle y RDF/XML",
+    "validate": "Validar",
+    "validating": "Validando...",
+    "error": "Error de Validación",
+    "clear": "Limpiar",
+    "pleaseWait": "Por favor espera mientras procesamos tu solicitud...",
+    "downloadResults": "Descargar Resultados",
+    "downloadTurtle": "Descargar reporte SHACL en formato Turtle",
+    "downloadCSV": "Descargar reporte SHACL en formato CSV",
+    "downloadChartPNG": "Descargar gráfico como PNG",
+    "downloadMetricsCSV": "Descargar métricas como CSV"
+  },
+  "profiles": {
+    "dcat_ap": "DCAT-AP v2.1.1",
+    "dcat_ap_es": "DCAT-AP-ES v1.0.0",
+    "nti_risp": "NTI-RISP v2013"
+  },
+  "results": {
+    "title": "Resultados de validación",
+    "noResults": "Aún no hay resultados. Envía el formulario para validar tus metadatos.",
+    "summary": "Resumen",
+    "qualityScore": "Puntuación de calidad",
+    "shacl": "Violaciones SHACL",
+    "metrics": "Métricas de calidad",
+    "chart": "Gráfico FAIR+C"
+  },
+  "quality": {
+    "findability": "Encontrabilidad",
+    "accessibility": "Accesibilidad",
+    "interoperability": "Interoperabilidad",
+    "reusability": "Reusabilidad",
+    "contextuality": "Contextualidad",
+    "overall": "Puntuación Global"
+  },
+  "shacl": {
+    "title": "Validación SHACL",
+    "conforms": "Conforme",
+    "nonConforms": "No conforme",
+    "severity": "Severidad",
+    "focusNode": "Nodo Foco",
+    "path": "Ruta de Propiedad",
+    "message": "Mensaje",
+    "value": "Valor",
+    "noViolations": "No se encontraron violaciones SHACL",
+    "filterBySeverity": "Filtrar por severidad",
+    "all": "Todas",
+    "violation": "Violación",
+    "warning": "Advertencia",
+    "info": "Información",
+    "grouped": "Agrupadas en",
+    "types": "tipos",
+    "total": "total",
+    "occurrences": "ocurrencias",
+    "examples": "Ejemplos",
+    "of": "de",
+    "andMore": "y {count} más...",
+    "noResults": "No se encontraron resultados de {severity}"
+  },
+  "metrics": {
+    "datasets": "Datasets Encontrados",
+    "distributions": "Distribuciones",
+    "dataServices": "Servicios de Datos",
+    "keywords": "Palabras Clave",
+    "licenses": "Licencias",
+    "accessRights": "Derechos de Acceso",
+    "contactPoints": "Puntos de Contacto",
+    "spatial": "Cobertura Espacial",
+    "temporal": "Cobertura Temporal"
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro",
+    "toggle": "Cambiar Tema"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "toggle": "Cambiar Idioma"
+  },
+  "errors": {
+    "parseError": "Error al analizar el contenido RDF",
+    "validationError": "Error durante la validación",
+    "networkError": "Error de red. Por favor, verifica la URL e intenta nuevamente.",
+    "genericError": "Ocurrió un error inesperado"
+  },
+  "loading": {
+    "parsing": "Analizando RDF...",
+    "validating": "Ejecutando validación SHACL...",
+    "calculating": "Calculando métricas de calidad...",
+    "downloading": "Descargando desde URL..."
+  },
+  "metricDetails": {
+    "shaclValidationPassed": "Validación SHACL exitosa",
+    "noDatasetsFound": "No se encontraron datasets",
+    "noDistributionsFound": "No se encontraron distribuciones",
+    "noDistributionsWithAccessURL": "No se encontraron distribuciones con accessURL HTTP válido",
+    "noDistributionsWithDownloadURL": "No se encontraron distribuciones con downloadURL",
+    "datasetsHaveKeywords": "{count}/{total} datasets tienen palabras clave",
+    "datasetsHaveThemes": "{count}/{total} datasets tienen temas",
+    "datasetsHaveSpatialCoverage": "{count}/{total} datasets tienen cobertura espacial",
+    "datasetsHaveTemporalCoverage": "{count}/{total} datasets tienen cobertura temporal",
+    "distributionsHaveAccessURL": "{count}/{total} distribuciones tienen accessURL accesible (HTTP 2xx)",
+    "distributionsHaveAccessURLNotChecked": "{count}/{total} distribuciones tienen accessURL (no verificada accesibilidad)",
+    "distributionsHaveDownloadURL": "{count}/{total} distribuciones tienen downloadURL",
+    "downloadURLsAccessible": "{count}/{total} downloadURLs son accesibles (HTTP 2xx)",
+    "distributionsHaveFormat": "{count}/{total} distribuciones tienen formato",
+    "distributionsHaveMediaType": "{count}/{total} distribuciones tienen mediaType",
+    "distributionsUseKnownFormat": "{count}/{total} distribuciones usan vocabulario de formato conocido",
+    "distributionsUseNonProprietary": "{count}/{total} distribuciones usan formatos no propietarios",
+    "distributionsAreMachineReadable": "{count}/{total} distribuciones son legibles por máquina",
+    "distributionsHaveLicense": "{count}/{total} distribuciones tienen licencia",
+    "distributionsUseKnownLicense": "{count}/{total} distribuciones usan vocabulario de licencia conocido",
+    "datasetsHaveAccessRights": "{count}/{total} datasets tienen derechos de acceso",
+    "datasetsUseKnownAccessRights": "{count}/{total} datasets usan vocabulario de derechos de acceso conocido",
+    "datasetsHaveContactPoint": "{count}/{total} datasets tienen punto de contacto",
+    "datasetsHavePublisher": "{count}/{total} datasets tienen editor",
+    "distributionsHaveByteSize": "{count}/{total} distribuciones tienen tamaño en bytes",
+    "entitiesHaveIssuedDate": "{count}/{total} entidades tienen fecha de publicación",
+    "entitiesHaveModifiedDate": "{count}/{total} entidades tienen fecha de modificación",
+    "distributionsHaveRights": "{count}/{total} distribuciones tienen derechos",
+    "metricNotImplemented": "Métrica {id} no implementada"
+  },
+  "ui": {
+    "profileIconAlt": "Ícono del perfil",
+    "viewProfileDocumentation": "Ver documentación del perfil",
+    "maxScore": "Puntuación máxima: {score}"
+  }
+}
