@@ -4,15 +4,14 @@ A modern, ultra-simplified RDF metadata validation and quality assessment tool b
 
 ## Key Features
 
-- ✅ **Multi-format RDF parsing**: Turtle, RDF/XML, JSON-LD, N-Triples
-- ✅ **SHACL validation**: Against 3 profiles (DCAT-AP, DCAT-AP-ES, NTI-RISP)
-- ✅ **FAIR+C metrics**: Findability, Accessibility, Interoperability, Reusability, contextuality
-- ✅ **Dual input modes**: Direct text input or URL download
-- ✅ **Interactive visualizations**: Radar charts with Chart.js
-- ✅ **Internationalization**: English and Spanish (next-intl)
-- ✅ **Dark mode**: Persistent theme toggle
-- ✅ **Fully responsive**: Mobile-first design with Tailwind CSS
-- ✅ **Type-safe**: TypeScript 5.x with strict mode
+- **Multi-format RDF parsing**: Turtle, RDF/XML, JSON-LD, N-Triples
+- **SHACL validation**: Against 3 profiles (DCAT-AP, DCAT-AP-ES, NTI-RISP)
+- **FAIR+C metrics**: Findability, Accessibility, Interoperability, Reusability, contextuality
+- **Dual input modes**: Direct text input or URL download
+- **Interactive visualizations**: Radar charts with Chart.js
+- **Internationalization**: English and Spanish (next-intl)
+- **Fully responsive**: Mobile-first design with Tailwind CSS
+- **Type-safe**: TypeScript 5.x with strict mode
 
 ## Quick Start
 
